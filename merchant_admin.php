@@ -345,7 +345,7 @@ $memberships = get_merchant_membership_types($merchant_id);
                 <div class="span12 box">
                     <div>
                         <div class="head">
-                            <h4>Login to your merchant account</h4>
+                            <h4>Log in to your merchant account</h4>
                         </div>
                         <div class="form">
                             <form method="post" action="login.php">
