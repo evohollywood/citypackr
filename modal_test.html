@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modal Test</title>
+</head>
+<body>
+<script type="text/javascript" src="http://image13.beso-images.com/beso/bootstrap/js/jquery-1.8.1.min.js"></script> 
+<script type="text/javascript" src="http://image13.beso-images.com/beso/bootstrap/js/bootstrap.js"></script> 
+<script type="text/javascript" src="http://image13.beso-images.com/beso/bootstrap/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://image13.beso-images.com/beso/share/jquery-ui.min.js"></script> 
+<link rel=StyleSheet href="http://image13.beso-images.com/beso/bootstrap/css/bootstrap.min.css"> 
+<script language="Javascript">
+
+// var modalDisplayed = localStorage.getItem('modalDisplayed');
+
+window.onload = function() {
+	// if (!modalDisplayed) {
+		timeout_init();
+	// }
+};
+
+function timeout_trigger() {
+	$('#myModal').modal({
+	  show: true
+	})
+	localStorage.setItem('modalDisplayed', true);
+}
+
+function timeout_init() {
+    setTimeout('timeout_trigger()', 2000);
+}
+
+function modal_sign_up_click() {
+	$('#myModal').modal('toggle');
+	
+}
+
+</script>
+<div class="modal hide fade" id="myModal" style="background-image:url('images/cupcakes.jpg');">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Join</h3>
+	</div>
+	<div class="modal-body">
+		<p>Some awesome text about how a person should sign-up to Beso because Beso is freaking awesome!</p>
+		<div class="span2 offset2">
+			<a class="btn btn-large btn-block btn-success" href="#" onClick="modal_sign_up_click();">Sign Up</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

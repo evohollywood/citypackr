@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CityPackr - The Best of Your City on Your Doorstep</title>
+	<link rel=StyleSheet href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+
+});//]]>  
+function changeURL( url ) {
+    document.location = url;
+}
+</script>
+</head>
+<body style="background-image:url('images/wave_back.jpg');">
+<script language="Javascript">
+
+window.onload = function() {
+    timeout_init();
+};
+
+function timeout_trigger() {
+    window.location="http://cakebaby.citypackr.com";   
+}
+
+function timeout_init() {
+    setTimeout('timeout_trigger()', 40000);
+}
+
+</script>
+<div class="container">
+	<h1>Available Perks:</h1>
+	  <div class="well">
+						<div class="row">
+							<h2 class="span8">Premium Interior/Exterior Hand Wash</h2>
+							<div class="span3" style="margin-top: 10px;"><a href="redeem.php?perk_id=1&email=evomoore@gmail.com&user_id=1" class="btn btn-large btn-block btn-success">Redeem</a>
+							</div>
+						</div>
+					</div>  <div class="well">
+						<div class="row">
+							<h2 class="span8">Interior Leather Treatment</h2>
+							<div class="span3" style="margin-top: 10px;"><a href="redeem.php?perk_id=2&email=evomoore@gmail.com&user_id=1" class="btn btn-large btn-block btn-success">Redeem</a>
+							</div>
+						</div>
+					</div>  <div class="well">
+						<div class="row">
+							<h2 class="span8">Deluxe Hot Wax</h2>
+							<div class="span3" style="margin-top: 10px;"><a href="redeem.php?perk_id=3&email=evomoore@gmail.com&user_id=1" class="btn btn-large btn-block btn-success">Redeem</a>
+							</div>
+						</div>
+					</div>  	
+					<a class="btn btn-large btn-danger btn-block" href="#" onClick="timeout_trigger()">Cancel</a>
+</div>
+</body>
+</html>
